@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainBackgroundColor"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_card_title_height"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/single_day_layout_corner_radius"
+            app:cardElevation="@dimen/single_day_layout_elevation"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="@dimen/single_day_layout_content_padding">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:lottie_fileName="animation/start_logo_animation.json"
+                    app:lottie_loop="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:id="@+id/image_welcome"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:alpha="0"
+                    android:src="@drawable/ic_noun_project"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/text_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icons_for_everything"
+                    android:padding="8dp"
+                    android:alpha="0"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorLight"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    fontPath="fonts/Roboto-Light.ttf"
+                    tools:ignore="MissingPrefix" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/recent_upload_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/mainСardСolor"
+            app:cardCornerRadius="@dimen/single_day_layout_corner_radius"
+            app:cardElevation="@dimen/single_day_layout_elevation"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/item_uploads"
+                        android:padding="8dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:src="@drawable/dots_vertical"
+                        android:layout_gravity="end|center_vertical"
+                        android:scaleType="fitCenter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/propertyItemLineColor" />
+
+                <TextView
+                    android:id="@+id/txt_recent_card_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="16dp"
+                    android:drawableTop="@drawable/ic_error"
+                    android:gravity="center"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/colorText"
+                    android:visibility="gone"
+                    fontPath="fonts/Roboto-Light.ttf"
+                    tools:text="@string/empty_list"
+                    tools:ignore="MissingPrefix" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_card_recent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overScrollMode="never"
+                        app:reverseLayout="true"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                        tools:orientation="horizontal"
+                        tools:listitem="@layout/item_card_icon" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/search_history_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/mainСardСolor"
+            app:cardCornerRadius="@dimen/single_day_layout_corner_radius"
+            app:cardElevation="@dimen/single_day_layout_elevation"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/you_searched"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/propertyItemLineColor" />
+
+               <!-- <com.havrylyuk.thenounproject.ui.custom.SearchHistoryItemView
+                    android:id="@+id/view_search_history1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintDescription="Android"
+                    app:iconDescription="@drawable/ic_preview" />
+                <com.havrylyuk.thenounproject.ui.custom.SearchHistoryItemView
+                    android:id="@+id/view_search_history2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintDescription="Android"
+                    app:iconDescription="@drawable/ic_preview" />
+                <com.havrylyuk.thenounproject.ui.custom.SearchHistoryItemView
+                    android:id="@+id/view_search_history3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintDescription="Android"
+                    app:iconDescription="@drawable/ic_preview" />
+                <com.havrylyuk.thenounproject.ui.custom.SearchHistoryItemView
+                    android:id="@+id/view_search_history4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintDescription="Android"
+                    app:iconDescription="@drawable/ic_preview" />-->
+                <TextView
+                    android:id="@+id/txt_history_card_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="16dp"
+                    android:drawableTop="@drawable/ic_error"
+                    android:gravity="center"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/colorText"
+                    android:visibility="gone"
+                    fontPath="fonts/Roboto-Light.ttf"
+                    tools:text="@string/empty_list"
+                    tools:ignore="MissingPrefix" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_card_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    tools:listitem="@layout/item_search_history" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

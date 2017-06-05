@@ -1,0 +1,79 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">The Noun Project</string>
+
+    <!--Menu items strings-->
+    <string name="item_collections">Collections</string>
+    <string name="item_icons">Icons</string>
+    <string name="item_uploads">Recent Uploads</string>
+    <string name="item_favorite">Favorites</string>
+    <string name="item_about">About</string>
+    <string name="item_login">Login</string>
+    <string name="image_content_description">Item image</string>
+
+    <!--Menu actions strings-->
+    <string name="action_search">Search icons</string>
+
+    <!--Errors strings-->
+    <string name="error_server">Server error</string>
+    <string name="error_server_not_available">Server not available</string>
+    <string name="error_not_found">Not found. Please try again.</string>
+    <string name="error_default">Error occurred: %s</string>
+    <string name="error_unauthorized">Unauthorized access</string>
+    <string name="error_connection">Please check your internet connection</string>
+    <string name="error_collections">No collections data</string>
+    <string name="error_icons">No icons data</string>
+    <string name="error_empty_history">No search history</string>
+    <string name="error_no_favorite">No favorites data</string>
+    <string name="error_collections_empty">No icons found! Empty collection.</string>
+    <string name="error_username">Please insert your name</string>
+    <string name="empty_list">Empty list</string>
+
+    <!--Detail collection strings-->
+    <string name="without_icons">Without icons</string>
+    <string name="format_icons_count"><xliff:g id="count">%d</xliff:g> icons</string>
+
+    <!--Login strings-->
+    <string name="login_dummy">Login Dummy</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <!--Login Validation-->
+    <string name="empty_email">Please provide a non empty email.</string>
+    <string name="invalid_email">Please provide a valid email.</string>
+    <string name="empty_password">Please provide a non empty password.</string>
+
+    <!--Logo String-->
+    <string name="icons_for_everything">Icons for everything</string>
+    <string name="project_description">Nearly a million curated icons, created by a global community</string>
+
+    <!--Search dialog params String-->
+    <string name="dialog_title">Search options:</string>
+    <string name="dialog_check_box_text">Limit results to public domain icons only</string>
+    <string name="dialog_ok_button">OK</string>
+    <string name="you_searched">You searched for</string>
+
+    <string name="format_search_history_icon"><xliff:g id="date">%s</xliff:g> search icons</string>
+    <string name="format_search_history_coll"><xliff:g id="date">%s</xliff:g> search collections</string>
+
+
+    <string name="about_content" translatable="false">
+        <![CDATA[
+        API:
+        <br><a href="http://api.thenounproject.com/">http://api.thenounproject.com</a>
+        <br><br>Libraries:
+        <br> <a href="https://square.github.io/retrofit/">Retrofit2</a>
+        <br> <a href="https://github.com/square/okhttp">Okhttp3</a>
+        <br> <a href="http://greenrobot.org/greendao/">Greendao</a>
+        <br> <a href="https://github.com/ReactiveX/">RxJava2</a>
+        <br> <a href="http://github.com/dagger/">Dagger</a>
+        <br> <a href="https://github.com/JakeWharton/">Butterknife</a>
+        <br> <a href="http://greenrobot.org/eventbus">EventBus</a>
+        <br> <a href="https://github.com/airbnb/lottie-android">Lottie-Android</a>
+        <br> <a href="https://github.com/JakeWharton/timber">Timber</a>
+        <br> <a href="https://github.com/facebook/fresco/">Fresco</a>
+        <br><br>Source code:
+        <br> <a href="https://github.com/graviton57/TheNounProject">https://github.com/graviton57/TheNounProject</a>
+        ]]>
+    </string>
+</resources>

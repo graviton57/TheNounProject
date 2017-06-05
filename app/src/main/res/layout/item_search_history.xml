@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.havrylyuk.thenounproject.ui.custom.SearchHistoryItemView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/view_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintDescription="Android"
+        app:iconDescription="@drawable/ic_noun_project_black" />

@@ -1,0 +1,10 @@
+ext {
+     NOUN_PROJECT_BASE_API_URL = "http://api.thenounproject.com/";
+     NOUN_PROJECT_BASE_URL = "http://www.thenounproject.com";
+
+     // To obtain an api key for the noun project see the following page:
+     // http://api.thenounproject.com/getting_started.html
+
+     NOUN_DEV_API_KEY ="${nounDevApiKey}"
+     NOUN_DEV_SECRET_API_KEY = "${nounDevSecretApiKey}";
+}

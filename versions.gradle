@@ -1,0 +1,32 @@
+ext {
+    supportVersion = '25.3.1'
+    okhttpVersion = '3.4.1'
+    retrofitVersion = '2.1.0'
+    retrofitRxJavaVersion = '1.0.0'
+    timberVersion = '4.3.1'
+    butterKnifeVersion = '8.4.0'
+    daggerVersion = '2.5'
+
+    rxJava2Version = '2.0.5'
+    rxAndroidVersion = '2.0.1'
+    rxBindingsVersion = '2.0.0'
+
+    lottieVersion = '1.5.3'
+    calligraphyVersion = '2.2.0'
+
+    signpostCoreVersion = '1.2.1.2'
+    jsoupVersion = '1.10.2'
+    okhttpSignpostVersion = '1.1.0'
+
+    eventBusVersion = '3.0.0'
+    greenDaoVersion = '3.2.0'
+    jodaTimeVersion = '2.9.1'
+    frescoVersion = '1.1.0'
+
+    junitVersion = '4.12'
+    espressoVersion = '2.2.2'
+    mockitoVersion = '2.7.1'
+    robolectricVersion = '3.3.2'
+
+
+}

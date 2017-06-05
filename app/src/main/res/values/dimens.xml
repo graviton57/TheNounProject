@@ -1,0 +1,56 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">140dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="shadow_height">3dp</dimen>
+    <dimen name="tab_max_width">264dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="title_margin">24dp</dimen>
+
+    <dimen name="list_icon">48dp</dimen>
+    <dimen name="list_item_extra_padding">0dp</dimen>
+
+    <dimen name="app_bar_height">260dp</dimen>
+    <dimen name="primary_text_margin">16dp</dimen>
+    <dimen name="sub_text_size">14sp</dimen>
+
+    <dimen name="single_day_layout_desc_height">220dp</dimen>
+    <dimen name="single_day_layout_corner_radius">2dp</dimen>
+    <dimen name="single_day_layout_elevation">5dp</dimen>
+    <dimen name="single_day_layout_content_padding">16dp</dimen>
+    <dimen name="single_day_layout_city_name_text_size">28sp</dimen>
+    <dimen name="single_day_layout_weather_info_text_size">18sp</dimen>
+    <dimen name="single_day_layout_temp_value_text_size">63sp</dimen>
+    <dimen name="single_day_layout_powered_by_padding">20dp</dimen>
+
+
+    <dimen name="item_day_desc_height">220dp</dimen>
+    <dimen name="item_day_day_text_size">28sp</dimen>
+    <dimen name="item_day_weather_info_text_size">16sp</dimen>
+    <dimen name="item_day_original_date_text_size">16sp</dimen>
+    <dimen name="item_day_temp_value_text_size">46sp</dimen>
+    <dimen name="item_day_chance_rain_text_size">16sp</dimen>
+
+    <dimen name="list_icon_size">48dp</dimen>
+
+
+    <dimen name="subtext_size">14sp</dimen>
+    <dimen name="subtext_size_bottom_padding">8dp</dimen>
+
+    <dimen name="item_property_layout_height">70dp</dimen>
+    <dimen name="item_property_icon_margin_right">30dp</dimen>
+    <dimen name="item_property_line_margin_left">50dp</dimen>
+    <!--Recent Icon home card-->
+    <dimen name="icon_home_card_width">120dp</dimen>
+    <dimen name="icon_home_card_magrin">16dp</dimen>
+    <dimen name="icon_home_card_content_padding">16dp</dimen>
+    <!--Title home card-->
+    <dimen name="home_card_title_height">190dp</dimen>
+
+
+</resources>

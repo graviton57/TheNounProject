@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_property_layout_height"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <com.facebook.drawee.view.SimpleDraweeView
+      android:id="@+id/img_icon"
+      android:padding="8dp"
+      android:layout_width="64dp"
+      android:layout_height="64dp"
+      android:layout_centerVertical="true"
+      android:layout_marginEnd="@dimen/item_property_icon_margin_right"
+      android:layout_marginRight="@dimen/item_property_icon_margin_right" />
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_toEndOf="@+id/img_icon"
+      android:layout_toRightOf="@+id/img_icon"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_hint"
+        tools:text="Android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/propertyItemHintColor" />
+
+    <TextView
+        android:id="@+id/txt_value"
+        tools:text="12-06-2017 search icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/propertyItemTextColor" />
+
+  </LinearLayout>
+
+  <View
+      android:id="@+id/view_bottom_line"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_alignParentBottom="true"
+      android:layout_marginLeft="@dimen/item_property_line_margin_left"
+      android:layout_marginStart="@dimen/item_property_line_margin_left"
+      android:background="@color/propertyItemLineColor" />
+
+</RelativeLayout>
