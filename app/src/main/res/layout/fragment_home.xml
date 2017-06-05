@@ -22,10 +22,10 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/home_card_title_height"
             app:cardBackgroundColor="@color/colorPrimary"
-            app:cardCornerRadius="@dimen/single_day_layout_corner_radius"
-            app:cardElevation="@dimen/single_day_layout_elevation"
+            app:cardCornerRadius="@dimen/home_card_layout_corner_radius"
+            app:cardElevation="@dimen/home_card_layout_elevation"
             app:cardUseCompatPadding="true"
-            app:contentPadding="@dimen/single_day_layout_content_padding">
+            app:contentPadding="@dimen/home_card_layout_content_padding">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -72,8 +72,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="@color/mainСardСolor"
-            app:cardCornerRadius="@dimen/single_day_layout_corner_radius"
-            app:cardElevation="@dimen/single_day_layout_elevation"
+            app:cardCornerRadius="@dimen/home_card_layout_corner_radius"
+            app:cardElevation="@dimen/home_card_layout_elevation"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -135,8 +135,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="@color/mainСardСolor"
-            app:cardCornerRadius="@dimen/single_day_layout_corner_radius"
-            app:cardElevation="@dimen/single_day_layout_elevation"
+            app:cardCornerRadius="@dimen/home_card_layout_corner_radius"
+            app:cardElevation="@dimen/home_card_layout_elevation"
             app:cardUseCompatPadding="true">
             <LinearLayout
                 android:orientation="vertical"

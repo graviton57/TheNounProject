@@ -6,8 +6,8 @@
     android:layout_width="@dimen/icon_home_card_width"
     android:layout_height="@dimen/icon_home_card_width"
     app:cardBackgroundColor="@color/mainСardСolor"
-    app:cardCornerRadius="@dimen/single_day_layout_corner_radius"
-    app:cardElevation="@dimen/single_day_layout_elevation"
+    app:cardCornerRadius="@dimen/home_card_layout_corner_radius"
+    app:cardElevation="@dimen/home_card_layout_elevation"
     app:cardUseCompatPadding="true">
 
     <com.facebook.drawee.view.SimpleDraweeView
@@ -15,7 +15,7 @@
         android:layout_width="@dimen/icon_home_card_width"
         android:layout_height="@dimen/icon_home_card_width"
         android:layout_gravity="center"
-        android:padding="@dimen/icon_home_card_magrin"
+        android:padding="@dimen/icon_home_card_margin"
         fresco:actualImageScaleType="fitCenter"
         fresco:fadeDuration="300"
         fresco:failureImage="@drawable/ic_error"
