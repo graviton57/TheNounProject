@@ -4,7 +4,7 @@ ext {
 
      // To obtain an api key for the noun project see the following page:
      // http://api.thenounproject.com/getting_started.html
-      // replace this keys
-     NOUN_DEV_API_KEY ="d9c838456a7243778e19c06bbb0935f8"
-     NOUN_DEV_SECRET_API_KEY = "a15e37c1b4234eb98974191836ee2890";
+     
+     NOUN_DEV_API_KEY ="${nounDevApiKey}"
+     NOUN_DEV_SECRET_API_KEY = "${nounDevSecretApiKey}";
 }

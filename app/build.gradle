@@ -17,7 +17,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
-    /*signingConfigs {
+    signingConfigs {
         release {
             try {
                 storeFile file("../keystore/noun_project.jks")
@@ -29,7 +29,7 @@ android {
                 throw new InvalidUserDataException("You should define KEYSTORE_PASSWORD and KEY_PASSWORD in gradle.properties.")
             }
         }
-    }*/
+    }
     packagingOptions {
         exclude 'LICENSE.txt'
         exclude 'META-INF/DEPENDENCIES'
@@ -45,7 +45,7 @@ android {
             debuggable false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            //signingConfig signingConfigs.release
+            signingConfig signingConfigs.release
             buildConfigField "String", "NOUN_PROJECT_BASE_API_URL", "\"$NOUN_PROJECT_BASE_API_URL\""
             buildConfigField "String", "NOUN_PROJECT_BASE_URL", "\"$NOUN_PROJECT_BASE_URL\""
             buildConfigField "String", "NOUN_DEV_API_KEY", "\"$NOUN_DEV_API_KEY\""
