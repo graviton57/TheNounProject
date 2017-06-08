@@ -152,30 +152,6 @@
                     android:layout_height="1dp"
                     android:background="@color/propertyItemLineColor" />
 
-               <!-- <com.havrylyuk.thenounproject.ui.custom.SearchHistoryItemView
-                    android:id="@+id/view_search_history1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:hintDescription="Android"
-                    app:iconDescription="@drawable/ic_preview" />
-                <com.havrylyuk.thenounproject.ui.custom.SearchHistoryItemView
-                    android:id="@+id/view_search_history2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:hintDescription="Android"
-                    app:iconDescription="@drawable/ic_preview" />
-                <com.havrylyuk.thenounproject.ui.custom.SearchHistoryItemView
-                    android:id="@+id/view_search_history3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:hintDescription="Android"
-                    app:iconDescription="@drawable/ic_preview" />
-                <com.havrylyuk.thenounproject.ui.custom.SearchHistoryItemView
-                    android:id="@+id/view_search_history4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:hintDescription="Android"
-                    app:iconDescription="@drawable/ic_preview" />-->
                 <TextView
                     android:id="@+id/txt_history_card_error"
                     android:layout_width="match_parent"
