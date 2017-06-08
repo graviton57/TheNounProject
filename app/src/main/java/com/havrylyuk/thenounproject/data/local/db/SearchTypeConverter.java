@@ -12,11 +12,11 @@ public class SearchTypeConverter implements PropertyConverter<SearchType, String
 
     @Override
     public SearchType convertToEntityProperty(String databaseValue) {
-        return SearchType.valueOf(databaseValue);
+        return databaseValue == null ? null : SearchType.valueOf(databaseValue);
     }
 
     @Override
     public String convertToDatabaseValue(SearchType entityProperty) {
-        return entityProperty.name();
+        return entityProperty == null ? null : entityProperty.name();
     }
 }
