@@ -25,7 +25,7 @@ import io.reactivex.functions.Consumer;
 public class HomePresenter <V extends HomeMvpView> extends BasePresenter<V>
         implements HomeMvpPresenter<V> {
 
-    private static final int CARD_RECENT_LIMIT = 4;
+    private static final int CARD_RECENT_LIMIT = 8;
 
     @Inject
     public HomePresenter(CompositeDisposableHelper compositeDisposableHelper, DataManager dataManager) {

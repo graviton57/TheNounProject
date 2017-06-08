@@ -49,27 +49,29 @@ public class SearchHistoryAdapter
     public void onBindViewHolder(CardViewHolder holder, int position) {
         OrmHistory ormHistory = getItem(position);
         holder.itemView.setTxtHint(ormHistory.getQuery());
-        if (getItemViewType(position)==VIEW_TYPE_ICON){
-            holder.itemView.setValue(
-                    context.getString(R.string.format_search_history_icon, ormHistory.getDate()));
+        if (getItemViewType(position) == VIEW_TYPE_ICON) {
+            holder.itemView.setValue(context.getString(R.string.format_search_history_icon,
+                    ormHistory.getDate().toString(HISTORY_DATE_FORMAT)));
             holder.itemView.setImgIcon(ormHistory.getPreviewUrl());
-        } else if (getItemViewType(position)==VIEW_TYPE_COLL){
-            holder.itemView.setValue(
-                    context.getString(R.string.format_search_history_coll, ormHistory.getDate()));
         } else {
-            holder.itemView.setValue(ormHistory.getDate().toString(HISTORY_DATE_FORMAT));
+            if (getItemViewType(position) == VIEW_TYPE_COLL) {
+                holder.itemView.setValue(context.getString(R.string.format_search_history_coll,
+                     ormHistory.getDate().toString(HISTORY_DATE_FORMAT)));
+            } else {
+                holder.itemView.setValue(ormHistory.getDate().toString(HISTORY_DATE_FORMAT));
+            }
         }
 
     }
 
     @Override
     public int getItemViewType(int position) {
-        if (getItem(position)!=null){
-           SearchType type = getItem(position).getType();
-            if (type==SearchType.ICONS){
+        if (getItem(position) != null) {
+            SearchType type = getItem(position).getType();
+            if (type == SearchType.ICONS) {
                 return VIEW_TYPE_ICON;
             }
-            if (type==SearchType.COLLECTIONS){
+            if (type == SearchType.COLLECTIONS) {
                 return VIEW_TYPE_COLL;
             }
         }
@@ -78,7 +80,8 @@ public class SearchHistoryAdapter
 
     public static class CardViewHolder extends RecyclerView.ViewHolder {
 
-        @BindView(R.id.view_search_history) SearchHistoryItemView itemView;
+        @BindView(R.id.view_search_history)
+        SearchHistoryItemView itemView;
 
         public CardViewHolder(View view) {
             super(view);

@@ -12,11 +12,11 @@ public class DateTimeConverter implements PropertyConverter<DateTime, Long> {
 
     @Override
     public DateTime convertToEntityProperty(Long databaseValue) {
-        return new DateTime(databaseValue);
+        return databaseValue == null ? null : new DateTime(databaseValue);
     }
 
     @Override
     public Long convertToDatabaseValue(DateTime entityProperty) {
-        return entityProperty.getMillis();
+        return entityProperty == null ? null : entityProperty.getMillis();
     }
 }
