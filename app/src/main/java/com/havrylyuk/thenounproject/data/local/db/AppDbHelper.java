@@ -318,7 +318,7 @@ public class AppDbHelper implements DbHelper {
 
     private <T> OrmHistory convertNounToHistoryOrm(T nounEntity) {
         OrmHistory result = null;
-        String queryDateTime = new DateTime().toString(HISTORY_DATE_FORMAT);
+        DateTime queryDateTime = new DateTime();
         if (nounEntity instanceof NounIcon){
             result = new OrmHistory();
             result.setId(((NounIcon)nounEntity).getId());

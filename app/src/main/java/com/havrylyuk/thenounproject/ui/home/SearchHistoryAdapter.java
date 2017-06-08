@@ -19,6 +19,8 @@ import javax.inject.Inject;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static com.havrylyuk.thenounproject.data.local.db.AppDbHelper.HISTORY_DATE_FORMAT;
+
 /**
  * Created by Igor Havrylyuk on 02.06.2017.
  */
@@ -55,7 +57,7 @@ public class SearchHistoryAdapter
             holder.itemView.setValue(
                     context.getString(R.string.format_search_history_coll, ormHistory.getDate()));
         } else {
-            holder.itemView.setValue(ormHistory.getDate());
+            holder.itemView.setValue(ormHistory.getDate().toString(HISTORY_DATE_FORMAT));
         }
 
     }
