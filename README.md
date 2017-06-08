@@ -67,7 +67,7 @@ ext {
  ```
 
 ## Library reference resources
-- Support library
+- [Support library](https://developer.android.com/topic/libraries/support-library/index.html)
 - [RxJava2](https://github.com/ReactiveX/RxJava), [RxAndroid](https://github.com/ReactiveX/RxAndroid) and [RxBindings](https://github.com/JakeWharton/RxBinding)
 - [Dagger2](https://google.github.io/dagger/)
 - [Retrofit2](http://square.github.io/retrofit/)
