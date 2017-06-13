@@ -9,16 +9,6 @@ env:
     - KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD
     - KEY_PASSWORD=$KEY_PASSWORD
 
-android:
-  components:
-    - platform-tools
-    - tools
-    - build-tools-25.0.2
-    - android-19
-    - android-25
-    - sys-img-armeabi-v7a-android-19
-    - extra-android-m2repository
-
 before_install:
     - chmod +x gradlew
 
