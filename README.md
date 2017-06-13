@@ -29,9 +29,6 @@ Collections Activity|Detail Activity
 ![alt text](art/collections.png "Collections") | ![alt text](art/icon_detail.png "Details")  
 
 
-## Code Style
-This sample project uses the IntelliJ IDEA [code style settings for Square's Java and Android projects](https://github.com/square/java-code-styles).
-
 ## Contributing
 
 Contributions are welcome to the project. Make pull request and you are IN!
