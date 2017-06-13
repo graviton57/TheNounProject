@@ -2,6 +2,13 @@ language: android
 jdk: oraclejdk8
 sudo: false
 
+env:
+  global:
+    - nounDevApiKey=$nounDevApiKey
+    - nounDevSecretApiKey=$nounDevSecretApiKey
+    - KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD
+    - KEY_PASSWORD=$KEY_PASSWORD
+
 android:
   components:
     - platform-tools
@@ -11,7 +18,10 @@ android:
     - android-25
     - sys-img-armeabi-v7a-android-19
     - extra-android-m2repository
-    
+
+before_install:
+    - chmod +x gradlew
+
 script:
     - echo "Travis branch is $TRAVIS_BRANCH"
     - echo "Travis branch is in pull request $TRAVIS_PULL+REQUEST"
