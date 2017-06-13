@@ -11,4 +11,5 @@ public interface AboutMvpPresenter <V extends AboutMvpView> extends Presenter<V>
 
     void onCloseClick();
 
+    void getUsageLimit();
 }

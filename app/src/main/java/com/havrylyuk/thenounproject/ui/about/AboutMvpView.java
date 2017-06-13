@@ -1,6 +1,7 @@
 package com.havrylyuk.thenounproject.ui.about;
 
 
+import com.havrylyuk.thenounproject.data.remote.model.response.UsageResponse;
 import com.havrylyuk.thenounproject.ui.base.DialogMvpView;
 
 /**
@@ -10,4 +11,6 @@ import com.havrylyuk.thenounproject.ui.base.DialogMvpView;
 public interface AboutMvpView extends DialogMvpView {
 
     void dismissDialog();
+
+    void showUsageLimit(UsageResponse response);
 }

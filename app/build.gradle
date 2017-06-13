@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.jakewharton.butterknife'
 apply plugin: 'org.greenrobot.greendao'
+
 apply from: '../api.gradle'
 apply from: '../versions.gradle'
 
@@ -140,5 +141,4 @@ dependencies {
     testCompile "org.mockito:mockito-core:$mockitoVersion"
     testCompile "org.robolectric:robolectric:$robolectricVersion"
 
-    //provided 'org.glassfish:javax.annotation:10.0-b28'
 }

@@ -8,6 +8,7 @@
     <string name="item_favorite">Favorites</string>
     <string name="item_about">About</string>
     <string name="item_login">Login</string>
+    <string name="item_legal">Legal</string>
     <string name="image_content_description">Item image</string>
 
     <!--Menu actions strings-->
@@ -38,7 +39,7 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
 
-    <!--Login Validation-->
+    <!-- todo Login Validation -->
     <string name="empty_email">Please provide a non empty email.</string>
     <string name="invalid_email">Please provide a valid email.</string>
     <string name="empty_password">Please provide a non empty password.</string>
@@ -53,29 +54,18 @@
     <string name="dialog_ok_button">OK</string>
     <string name="you_searched">You searched for</string>
 
-    <string name="format_search_history_icon"><xliff:g id="date">%s</xliff:g> search icons</string>
-    <string name="format_search_history_coll"><xliff:g id="date">%s</xliff:g> search collections</string>
-
+    <string name="format_search_history_icon"><xliff:g id="icon">%s</xliff:g> search icons</string>
+    <string name="format_search_history_coll"><xliff:g id="history">%s</xliff:g> search collections</string>
+    <string name="format_limit_usage">Usage: <xliff:g id="usage">%1d</xliff:g> Limit: <xliff:g id="limit">%2d</xliff:g></string>
 
     <string name="about_content" translatable="false">
         <![CDATA[
         API:
         <br><a href="http://api.thenounproject.com/">http://api.thenounproject.com</a>
-        <br><br>Libraries:
-        <br> <a href="https://square.github.io/retrofit/">Retrofit2</a>
-        <br> <a href="https://github.com/square/okhttp">Okhttp3</a>
-        <br> <a href="http://greenrobot.org/greendao/">Greendao</a>
-        <br> <a href="https://github.com/ReactiveX/">RxJava2</a>
-        <br> <a href="http://github.com/dagger/">Dagger</a>
-        <br> <a href="https://github.com/JakeWharton/">Butterknife</a>
-        <br> <a href="http://greenrobot.org/eventbus">EventBus</a>
-        <br> <a href="https://github.com/airbnb/lottie-android">Lottie-Android</a>
-        <br> <a href="https://github.com/JakeWharton/timber">Timber</a>
-        <br> <a href="https://github.com/facebook/fresco/">Fresco</a>
         <br><br>Source code:
         <br> <a href="https://github.com/graviton57/TheNounProject">https://github.com/graviton57/TheNounProject</a>
         ]]>
     </string>
     <string name="coming_soon">Coming soon</string>
-    <string name="item_legal">Legal</string>
+
 </resources>

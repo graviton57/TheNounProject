@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.havrylyuk.thenounproject.R;
+import com.havrylyuk.thenounproject.data.remote.model.response.UsageResponse;
 import com.havrylyuk.thenounproject.injection.component.ActivityFragmentComponent;
 import com.havrylyuk.thenounproject.ui.base.BaseDialog;
 
@@ -38,6 +39,9 @@ public class AboutDialog extends BaseDialog  implements AboutMvpView {
     @BindView(R.id.dialog_message)
     TextView message;
 
+    @BindView(R.id.dialog_usage_limit)
+    TextView limitUsage;
+
     public static AboutDialog newInstance() {
         Bundle args = new Bundle();
         AboutDialog fragment = new AboutDialog();
@@ -54,6 +58,7 @@ public class AboutDialog extends BaseDialog  implements AboutMvpView {
             component.inject(this);
             setUnBinder(ButterKnife.bind(this, view));
             presenter.attachView(this);
+            presenter.getUsageLimit();
         }
         return view;
     }
@@ -76,6 +81,14 @@ public class AboutDialog extends BaseDialog  implements AboutMvpView {
     @Override
     public void dismissDialog() {
         super.dismissDialog(ABOUT_DIALOG_TAG);
+    }
+
+    @Override
+    public void showUsageLimit(UsageResponse response) {
+        if (response != null) {
+            limitUsage.setText(getString(R.string.format_limit_usage,
+                    response.getUsage().getMonthly(),response.getLimits().getMonthly()));
+        }
     }
 
     @Override
