@@ -19,6 +19,8 @@ View classes along with their corresponding Presenters
 ### utils
 Utility classes
 
+## Preview
+
 Main Activity|Icons Activity 
 -------------|-----------------
 ![alt text](art/main.png "Main Activity")  | ![alt text](art/search.png "Search Icons") 
@@ -47,7 +49,7 @@ Feature request should be reported in the [issues section](https://github.com/gr
 
 ### The Noun Project
 
-[The Noun Project](http://www.thenounproject.com) is the source for some the graphics used in this application. The following users' work was used:
+[The Noun Project](http://www.thenounproject.com) is the source for some the graphics used in this application.
 
 
 ### The Noun Project API Keys

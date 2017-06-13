@@ -140,5 +140,5 @@ dependencies {
     testCompile "org.mockito:mockito-core:$mockitoVersion"
     testCompile "org.robolectric:robolectric:$robolectricVersion"
 
-    provided 'org.glassfish:javax.annotation:10.0-b28'
+    //provided 'org.glassfish:javax.annotation:10.0-b28'
 }
