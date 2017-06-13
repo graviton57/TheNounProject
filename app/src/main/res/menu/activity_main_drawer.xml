@@ -16,6 +16,11 @@
             android:title="@string/item_icons" />
 
         <item
+            android:id="@+id/nav_legal"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="@string/item_legal" />
+
+        <item
             android:id="@+id/nav_about"
             android:icon="@android:drawable/ic_dialog_info"
             android:title="@string/item_about" />

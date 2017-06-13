@@ -1,6 +1,7 @@
 package com.havrylyuk.thenounproject.ui.main;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -13,13 +14,13 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import com.havrylyuk.thenounproject.BuildConfig;
 import com.havrylyuk.thenounproject.R;
 import com.havrylyuk.thenounproject.ui.about.AboutDialog;
 import com.havrylyuk.thenounproject.ui.base.BaseActivity;
 import com.havrylyuk.thenounproject.ui.collections.CollectionsActivity;
 import com.havrylyuk.thenounproject.ui.home.HomeFragment;
 import com.havrylyuk.thenounproject.ui.icons.IconsActivity;
-import com.havrylyuk.thenounproject.ui.search_dialog.FilterDialog;
 
 import javax.inject.Inject;
 
@@ -82,7 +83,7 @@ public class MainActivity extends BaseActivity
 
     @Override
     public void setUserName(String userName) {
-       // txtUserName.setText(String.format(getString(R.string.txt_welcome_main), userName));
+       //
     }
 
     @Override
@@ -111,13 +112,18 @@ public class MainActivity extends BaseActivity
         int id = item.getItemId();
         switch (id) {
             case R.id.nav_login:
-                Toast.makeText(this, "ShowLogin", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.coming_soon, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_collections:
                 startActivity(new Intent(this, CollectionsActivity.class));
                 break;
             case R.id.nav_icons:
                 startActivity(new Intent(this, IconsActivity.class));
+                break;
+            case R.id.nav_legal:
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse(BuildConfig.NOUN_PROJECT_BASE_URL + "/legal"));
+                startActivity(intent);
                 break;
             case R.id.nav_about:
                 AboutDialog.newInstance().show(getSupportFragmentManager());
