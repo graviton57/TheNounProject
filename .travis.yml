@@ -9,7 +9,7 @@ env:
   - secure: YN1e5s9KZianxEqS/pfOz8iRWg60PY1UwDTFVi+0/b7XtcjegldCtlUT2eL4k1jkDjulGZ9C2UzEdIL87RoeIeD0j5+KWfXlfiBS0SI9Vjv8JvI2EBQ0D/2esWPKK2Sx+deiUCmDRZnNj4Envf789JwSI5ErgoJ4BNNFoSZBWC8dwryuZ8ozEcZutv4M8Jx/XnvdNY1Fsjb9v1CDNcc0lJVAiUcxCAGAKZ3YiWUGZKCL+ddWun5EpC2lwr9oDrHqPxT7qjFsAwMeONfb52CrTBx1tltwZ52refAyRCqOghU1KR09L13gy1j5vBxDsgve0gA0El5tw3viq469F4Uw/HD6BS9PVclnnDux7A2ynpqfflaHF28WKLy2MYCwXfdST+8ETqvRKVt1tewjg72vzfBUFMAE+uXe6gPz+G3zFXf4S4a1VxiHY8G4B6p1lgHNOFMWNskKLxtZqDh86vxil4ASGEZL2hJhtJIP493jHemUcCkaDHPUc3P9iYmnhm0p29ZvS8ddNFOrPAkltaTuuBc+XgucBDOl6z61J21iLjJjhQ5K2UqWWieGaKyvLbLuwtM1z/1ti4+ayTb9s6wnsCbxi4gWp04s6bynOUTZlEwWup4hrH6m81fOYHb/XMmddKH8IsmTtZfS+UVZMGqyRGBPjX/3jNCrnxXIxtEr1nQ=
 before_install:
 - openssl aes-256-cbc -K $encrypted_7cc8a560347c_key -iv $encrypted_7cc8a560347c_iv
-  -in noun_project.jks.enc -out app/keystore/noun_project.jks -d
+  -in app/keystore/noun_project.jks.enc -out app/keystore/noun_project.jks -d
 - chmod +x gradlew
 before_deploy:
 - cp $TRAVIS_BUILD_DIR/app/keystore/noun_project.jks $HOME
