@@ -1,18 +1,25 @@
 language: android
 jdk: oraclejdk8
 sudo: false
-
 env:
   global:
-    - nounDevApiKey=$nounDevApiKey
-    - nounDevSecretApiKey=$nounDevSecretApiKey
-    - KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD
-    - KEY_PASSWORD=$KEY_PASSWORD
+  - secure: aSM3JxMcB+slphAs3sdgghTb1OeW4ptgUC3zqKoukScFQ50vUpHQQCWEvAummm66RqXTE7brNeBRzBwK9/7Inf8ufBvkawLYnF1WVedATA6mSBElqnxgHRj3xa/Bg7kIvWeQXn3diGfmAC3lwhF1eXEnGbLIYuVKXM52z10xwV+UnHO1YjcJQnsDK0FWejMdPA4xJ9T+4y6HXZwbM6IgD4tJn9xSOPqdsFLAUQxL2lWbQGYlhQRv4B3G6qvb1VkTj3j0KyvKfbQmDJvlwOq/aoVRj7cfZFXy4INTtI9mLAJHYW6ygCA1jX49FroE4OGXdJ0R+8JwheaV7WpNaTbimsrjJeB1fOE6YCIDOrb6a06BLOfK6HCa+rZXY8M7EKp+/F3Zk6uFzl5nVSnPZ/pJRaOdm8FiUDx8yHw3BtUeHZxyoDKhIbweZWxV2ld4snsr3P4AVpYWZN0bYT4mkFxi5iltjeiSB+z1YXV+gUFMJ0Se7cG/FVCn2pFzdtXiLi5NcIutRJ/kWRl7mwZ9Yx6O/HtbcQyNUGMfYTWPNlMT2ZWIRR6QJ9HRQ4bHaIQbOKsu8pCL+E3rCwfHWx5A+qcmgkrrTAjT9C1xz2oHev9hAWChSCLJmQFz0vlvjZLXmqyPpCRGt0p7DvYCa3K6m4VuuFZzeuSBmfFV+HMEfuAtCBI=
+  - secure: zAWKIJhZQ1KTNtporEJOgr/UrMM9dyMN23rq34TDZ6fi3r9j/4pkp+E+RSuP7JC+87AJGOowQwjy2dMAoCDPsevqiwjFgKXPY90g2q0C2vSoxZIkfuGVoQwMdUkv3ApYset8KBqSg4UWyc/NU8SBAYk2V1OCihlOPjW8ZIL8+XsV9juhpjt4L6AYzHDaAh8w9jWiTH6Qn0+ORMw1IlAtCeFYm19kFQP3wSmpcmBZBliRmsDMkDO9S5+0dZGOT6tJqNmrPTtZ+9eC6HagTVlcgc0palUaSvT9+ynjoFphvhd+enVg4MnesprJgrEvXL4HuwpEx4/eTozuJ4AWxsXN0k+OfG0FUbTSW3g2PbCyLWDeAZ4X+gOYAUW45QVVUEZbartcRJtqWJeI+qCX9Wb7dX9WAU5bNdkwllWpmGRPe0FDwD3K5Fcjts1zJrp2VT1qZPcOO3PaJwp2l7EuDU0f3Ic83O2VLyRJPlFnH/Mw3IL6kk3ohO2LTNaFNoF3V5rzM2cRs+qcDe25fVh0nmJTirLlmJQvXBRRMOXSL54GnbGeqyTY5VMo+bappC17hxjTjMOGtFu6yVjAcFkdrlpUqG5TW+vPQ1pn6ZvhCEcNUDFRMGvvX6VJ/SAE8RE8tcQijh2M42EPLtDgpngzVjbgX3+h6nU++RdqEAhARx3+QCk=
+  - secure: krXE/3fIZQ+pvpoIg9CvyJJLG1OSz9myN9QEKvKFDrS417lWYn6PFfoZNHIrflQ5Wxl29P7auHeckQrWZdNB8EQZiKUlEXKSJUMYiG7jK0fMtlgGCU9+g/6XYpIwdEmRvaHFwW99Q0TsXCTdoNBAphDkvvcPCj6+tlWYdqyAgMF/KhNskFq2Xdz6ejqKeqeEobE1DI1lc8bx+YM3xFKy8M/g8+goFTVXIgy4DZ2mqU5SMuvLK9CgQt2IPBDDbpBvW3wr+2L7i/5gjwkzrIoo49/4aMUgwIG6Czpk3XSkthpxI8lRrJW4TWnJ87eyAwycOx6uGfOK0PCdRxxxG0/qASogqdRUI4cLrDX6jwyfyvNbnmEOi9ilyfrK5Vw0T6P7HheEHrO4oILsaKSXoeJklzu/K9Lt/HebUtwx4ls7sAuMMJfMRYIiEz77KtGjgy3v0oDMN3eN2/1PlnH9iokBkZIPBl/8X7hmcp3gClhvPgvPmqEEGhLTVLTOd5OUcrSABnX3rDArrwi0kavCigXo89yaeBPoImTijdSgqFrCTdRnDaTNkt5Suha6KTVNSqcXp8yQfB7C9Y+heo+f++VNqhCib4DTiATLYqF4f4vYB5hD1Yt27/aXEWA/TArK/eze4oBqjNABRZk4iIYfiaHyUU9tfbye16UY/ynAohjLFC4=
+  - secure: YN1e5s9KZianxEqS/pfOz8iRWg60PY1UwDTFVi+0/b7XtcjegldCtlUT2eL4k1jkDjulGZ9C2UzEdIL87RoeIeD0j5+KWfXlfiBS0SI9Vjv8JvI2EBQ0D/2esWPKK2Sx+deiUCmDRZnNj4Envf789JwSI5ErgoJ4BNNFoSZBWC8dwryuZ8ozEcZutv4M8Jx/XnvdNY1Fsjb9v1CDNcc0lJVAiUcxCAGAKZ3YiWUGZKCL+ddWun5EpC2lwr9oDrHqPxT7qjFsAwMeONfb52CrTBx1tltwZ52refAyRCqOghU1KR09L13gy1j5vBxDsgve0gA0El5tw3viq469F4Uw/HD6BS9PVclnnDux7A2ynpqfflaHF28WKLy2MYCwXfdST+8ETqvRKVt1tewjg72vzfBUFMAE+uXe6gPz+G3zFXf4S4a1VxiHY8G4B6p1lgHNOFMWNskKLxtZqDh86vxil4ASGEZL2hJhtJIP493jHemUcCkaDHPUc3P9iYmnhm0p29ZvS8ddNFOrPAkltaTuuBc+XgucBDOl6z61J21iLjJjhQ5K2UqWWieGaKyvLbLuwtM1z/1ti4+ayTb9s6wnsCbxi4gWp04s6bynOUTZlEwWup4hrH6m81fOYHb/XMmddKH8IsmTtZfS+UVZMGqyRGBPjX/3jNCrnxXIxtEr1nQ=
 
 before_install:
-    - chmod +x gradlew
+- openssl aes-256-cbc -K $encrypted_7cc8a560347c_key -iv $encrypted_7cc8a560347c_iv
+  -in app/keystore/noun_project.jks.enc -out app/keystore/noun_project.jks -d
+- chmod +x gradlew
+
+before_deploy:
+- cp $TRAVIS_BUILD_DIR/app/keystore/noun_project.jks $HOME
+- cd app/build/outputs/apk/
+- jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore $HOME/app/keystore/noun_project.jks -storepass $KEYSTORE_PASSWORD -keypass $KEY_PASSWORD app-release-unsigned.apk default
+
 
 script:
-    - echo "Travis branch is $TRAVIS_BRANCH"
-    - echo "Travis branch is in pull request $TRAVIS_PULL+REQUEST"
-    - ./gradlew clean test
+- echo "Travis branch is $TRAVIS_BRANCH"
+- echo "Travis branch is in pull request $TRAVIS_PULL+REQUEST"
+- "./gradlew clean test"
