@@ -9,19 +9,20 @@
 [![API](https://img.shields.io/badge/API-16%2B-green.svg?style=flat)](https://android-arsenal.com/api?level=16)
 
 
+
 [The Noun Project](https://thenounproject.com) is a great resource for finding clip art for use in applications.
 The application is built with MVP architectural approach and uses [The Noun Project API](http://api.thenounproject.com/) for fetching data.
 
 ## Project Structure
-### data 
+### Data 
 It contains all the data(Shared Preferences, Local DB and Remote API) accessing and manipulating components
-### injection
+### Injection
 Dependency providing classes using Dagger2
-### events
+### Events
 EventBus events classes that simplifies communication between Activitie and Fragments
-### ui
+### UI
 View classes along with their corresponding Presenters
-### utils
+### Utils
 Utility classes
 
 ## Preview
@@ -38,7 +39,8 @@ Collections Activity|Detail Activity
 
 ## Contributing
 
-Contributions are welcome to the project. Make pull request and you are IN!
+Contributions are welcome to the project! 
+Read [contributing](https://github.com/graviton57/TheNounProject/blob/master/CONTRIBUTING.md)  make pull request and you are IN!
 
 ### Reporting Bugs & Bug Fixes
 

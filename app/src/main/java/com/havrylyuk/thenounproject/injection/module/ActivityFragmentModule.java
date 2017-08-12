@@ -35,6 +35,9 @@ import com.havrylyuk.thenounproject.ui.icons.base.NounIconMvpView;
 import com.havrylyuk.thenounproject.ui.icons.shearch_icon.SearchIconPresenter;
 import com.havrylyuk.thenounproject.ui.icons.recent.RecentMvpPresenter;
 import com.havrylyuk.thenounproject.ui.icons.recent.RecentPresenter;
+import com.havrylyuk.thenounproject.ui.login.LoginMvpPresenter;
+import com.havrylyuk.thenounproject.ui.login.LoginMvpView;
+import com.havrylyuk.thenounproject.ui.login.LoginPresenter;
 import com.havrylyuk.thenounproject.ui.main.MainMvpPresenter;
 import com.havrylyuk.thenounproject.ui.main.MainMvpView;
 import com.havrylyuk.thenounproject.ui.main.MainPresenter;
@@ -136,6 +139,13 @@ public class ActivityFragmentModule {
     @ActivityScope
     FilterDialogMvpPresenter<FilterDialogMvpView> getSearchDialogPresenter(
             FilterDialogPresenter<FilterDialogMvpView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @ActivityScope
+    LoginMvpPresenter<LoginMvpView> getLoginPresenter (
+            LoginPresenter<LoginMvpView> presenter) {
         return presenter;
     }
 

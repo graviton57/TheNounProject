@@ -10,6 +10,7 @@ import com.havrylyuk.thenounproject.ui.home.HomeFragment;
 import com.havrylyuk.thenounproject.ui.icons.IconsActivity;
 import com.havrylyuk.thenounproject.ui.icons.shearch_icon.SearchIconFragment;
 import com.havrylyuk.thenounproject.ui.icons.recent.RecentFragment;
+import com.havrylyuk.thenounproject.ui.login.LoginActivity;
 import com.havrylyuk.thenounproject.ui.main.MainActivity;
 import com.havrylyuk.thenounproject.ui.search_dialog.FilterDialog;
 
@@ -43,4 +44,6 @@ public interface ActivityFragmentComponent {
     void inject(FilterDialog dialog);
 
     void inject(AboutDialog dialog);
+
+    void inject(LoginActivity loginActivity);
 }

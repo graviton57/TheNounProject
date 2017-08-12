@@ -1,8 +1,10 @@
 package com.havrylyuk.thenounproject.data.remote;
 
 import com.havrylyuk.thenounproject.data.remote.helper.error.ErrorHandlerHelper;
+import com.havrylyuk.thenounproject.data.remote.model.LoginRequest;
 import com.havrylyuk.thenounproject.data.remote.model.response.CollectionsResponse;
 import com.havrylyuk.thenounproject.data.remote.model.response.IconsResponse;
+import com.havrylyuk.thenounproject.data.remote.model.response.LoginResponse;
 import com.havrylyuk.thenounproject.data.remote.model.response.RecentUploadResponse;
 import com.havrylyuk.thenounproject.data.remote.model.response.UsageResponse;
 
@@ -74,6 +76,16 @@ public class AppApiHelper implements ApiHelper {
     @Override
     public Observable<UsageResponse> getOauthUsage() {
         return apiInterface.getOauthUsage();
+    }
+
+    @Override
+    public Observable<LoginResponse> doServerLoginApiCall(LoginRequest.ServerLoginRequest request) {
+        return null;
+    }
+
+    @Override
+    public Observable<LoginResponse> doFacebookLoginApiCall(LoginRequest.FacebookLoginRequest request) {
+        return null;
     }
 
 

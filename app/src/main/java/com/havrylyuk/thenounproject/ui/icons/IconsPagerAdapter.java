@@ -24,9 +24,9 @@ public class IconsPagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return SearchIconFragment.newInstance();
-            case 1:
                 return RecentFragment.newInstance();
+            case 1:
+                return SearchIconFragment.newInstance();
             default:
                 return null;
         }

@@ -21,8 +21,10 @@ public class RecyclerItemUtils {
                         view.setOnClickListener(new View.OnClickListener() {
                             @Override public void onClick(View v) {
                                 if (onItemClickListener != null) {
-                                    RecyclerView.ViewHolder holder = recyclerView.getChildViewHolder(v);
-                                    onItemClickListener.onItemClicked(recyclerView, holder.getAdapterPosition(), v);
+                                    RecyclerView.ViewHolder holder =
+                                            recyclerView.getChildViewHolder(v);
+                                    onItemClickListener.onItemClicked(recyclerView,
+                                            holder.getAdapterPosition(), v);
                                 }
                             }
                         });

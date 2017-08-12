@@ -18,7 +18,6 @@ import com.havrylyuk.thenounproject.BuildConfig;
 import com.havrylyuk.thenounproject.R;
 import com.havrylyuk.thenounproject.data.remote.model.NounIcon;
 import com.havrylyuk.thenounproject.ui.base.BaseFragment;
-import com.havrylyuk.thenounproject.ui.icons.base.NounIconAdapter;
 import com.havrylyuk.thenounproject.ui.icons.base.NounIconMvpView;
 import com.havrylyuk.thenounproject.utils.EndlessRecyclerViewScrollListener;
 import com.havrylyuk.thenounproject.utils.RecyclerItemUtils;
@@ -75,7 +74,7 @@ public class RecentFragment extends BaseFragment
     @Override
     protected void init() {
         swipeRefreshLayout.setOnRefreshListener(this);
-        swipeRefreshLayout.setColorSchemeResources(R.color.drawerBackgroundColor);
+        swipeRefreshLayout.setColorSchemeResources(R.color.colorDrawerBackground);
         swipeRefreshLayout.setProgressBackgroundColorSchemeColor(
                 ContextCompat.getColor(getActivity(), R.color.colorPrimary));
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());

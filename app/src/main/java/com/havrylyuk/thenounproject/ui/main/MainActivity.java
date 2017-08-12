@@ -21,11 +21,13 @@ import com.havrylyuk.thenounproject.ui.base.BaseActivity;
 import com.havrylyuk.thenounproject.ui.collections.CollectionsActivity;
 import com.havrylyuk.thenounproject.ui.home.HomeFragment;
 import com.havrylyuk.thenounproject.ui.icons.IconsActivity;
+import com.havrylyuk.thenounproject.ui.login.LoginActivity;
 
 import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import timber.log.Timber;
 
 /**
  * Created by Igor Havrylyuk on 20.05.2017.
@@ -83,7 +85,6 @@ public class MainActivity extends BaseActivity
 
     @Override
     public void setUserName(String userName) {
-       //
     }
 
     @Override
@@ -108,11 +109,18 @@ public class MainActivity extends BaseActivity
     }
 
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Timber.d("requestCode=%d, resultCode=%d,  data=%s", requestCode, requestCode, data.toString());
+    }
+
+    @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         switch (id) {
             case R.id.nav_login:
-                Toast.makeText(this, R.string.coming_soon, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.coming_soon), Toast.LENGTH_SHORT).show();
+                //startActivityForResult(new Intent(this, LoginActivity.class), 0);
                 break;
             case R.id.nav_collections:
                 startActivity(new Intent(this, CollectionsActivity.class));

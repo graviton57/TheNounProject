@@ -30,7 +30,6 @@ import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import timber.log.Timber;
 
 /**
  * Created by Igor Havrylyuk on 20.05.2017.
@@ -67,7 +66,7 @@ public class CollectionFragment extends BaseSearchFragment
     @Override
     protected void init() {
         swipeRefreshLayout.setOnRefreshListener(this);
-        swipeRefreshLayout.setColorSchemeResources(R.color.drawerBackgroundColor);
+        swipeRefreshLayout.setColorSchemeResources(R.color.colorDrawerBackground);
         swipeRefreshLayout.setProgressBackgroundColorSchemeColor(
                 ContextCompat.getColor(getActivity(), R.color.colorPrimary));
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());

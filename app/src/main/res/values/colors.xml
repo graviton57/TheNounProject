@@ -7,16 +7,26 @@
     <color name="colorAccent"          >#FFD740</color>
 
     <color name="colorText"            >#949494</color>
-    <color name="drawerBackgroundColor">#ffffff</color>
-    <color name="mainBackgroundColor"  >#efefef</color>
-    <color name="mainСardСolor"        >#fafafa</color>
+    <color name="colorDrawerBackground">#ffffff</color>
+    <color name="colorMainBackground"  >#efefef</color>
+    <color name="colorMainСard"        >#fafafa</color>
 
-    <color name="propertyItemHintColor">#737373</color>
-    <color name="propertyItemTextColor">#4b4b4b</color>
-    <color name="propertyItemLineColor">#e0e0e0</color>
+    <color name="colorPropertyItemHint">#737373</color>
+    <color name="colorPropertyItemText">#4b4b4b</color>
+    <color name="colorPropertyItemLine">#e0e0e0</color>
 
     <color name="colorSecondaryText"   >#757575</color>
     <color name="colorLight"           >#ffffff</color>
+
+    <color name="colorFbButton"        >#3b5998</color>
+    <color name="colorTransparent"     >#00000000</color>
+    <color name="colorBlackEffective"  >#2a2a2a</color>
+    <color name="colorGray"            >#7e7e7e</color>
+    <color name="colorLightGray"       >#dbdbdb</color>
+    <color name="colorShadow"          >#d0d8dc</color>
+
+
+
 
 
 </resources>

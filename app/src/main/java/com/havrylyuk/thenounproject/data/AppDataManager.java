@@ -9,10 +9,12 @@ import com.havrylyuk.thenounproject.data.local.db.model.OrmIcon;
 import com.havrylyuk.thenounproject.data.local.preferences.PreferencesHelper;
 import com.havrylyuk.thenounproject.data.remote.ApiHelper;
 import com.havrylyuk.thenounproject.data.remote.helper.error.ErrorHandlerHelper;
+import com.havrylyuk.thenounproject.data.remote.model.LoginRequest;
 import com.havrylyuk.thenounproject.data.remote.model.NounCollection;
 import com.havrylyuk.thenounproject.data.remote.model.NounIcon;
 import com.havrylyuk.thenounproject.data.remote.model.response.CollectionsResponse;
 import com.havrylyuk.thenounproject.data.remote.model.response.IconsResponse;
+import com.havrylyuk.thenounproject.data.remote.model.response.LoginResponse;
 import com.havrylyuk.thenounproject.data.remote.model.response.RecentUploadResponse;
 import com.havrylyuk.thenounproject.data.remote.model.response.UsageResponse;
 
@@ -206,6 +208,15 @@ public class AppDataManager implements DataManager {
         return apiHelper.getOauthUsage();
     }
 
+    @Override
+    public Observable<LoginResponse> doServerLoginApiCall(LoginRequest.ServerLoginRequest request) {
+        return apiHelper.doServerLoginApiCall(request);
+    }
+
+    @Override
+    public Observable<LoginResponse> doFacebookLoginApiCall(LoginRequest.FacebookLoginRequest request) {
+        return apiHelper.doFacebookLoginApiCall(request);
+    }
 
     @Override
     public ErrorHandlerHelper getErrorHandlerHelper() {
@@ -217,4 +228,31 @@ public class AppDataManager implements DataManager {
         apiHelper.setErrorHandler(errorHandler);
     }
 
+    @Override
+    public void updateApiHeader(Long userId, String accessToken) {
+        //
+    }
+
+    @Override
+    public void setUserAsLoggedOut() {
+        updateUserInfo(
+                null,
+                null,
+                DataManager.LoggedInMode.LOGGED_IN_MODE_LOGGED_OUT,
+                null,
+                null,
+                null);
+    }
+
+    @Override
+    public void updateUserInfo(String accessToken, Long userId, LoggedInMode loggedInMode,
+                               String userName, String email, String profilePicPath) {
+        //set Access Token(accessToken);
+        //set Current User Id(userId);
+        //set Current User Logged In Mode(loggedInMode);
+        //set Current User Name(userName);
+        //set Current User Email(email);
+        //set Current User Profile Picture Url (profilePicPath);
+         updateApiHeader(userId, accessToken);
+    }
 }

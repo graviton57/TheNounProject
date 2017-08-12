@@ -17,8 +17,7 @@ import javax.inject.Inject;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class IconsActivity extends BaseActivity
-            implements IconsMvpView {
+public class IconsActivity extends BaseActivity implements IconsMvpView {
 
     private static final int PAGE_COUNT = 2;
 
@@ -26,14 +25,14 @@ public class IconsActivity extends BaseActivity
     IconsMvpPresenter<IconsMvpView> presenter;
 
     @Inject
-    IconsPagerAdapter mPagerAdapter;
+    IconsPagerAdapter pagerAdapter;
 
     @BindView(R.id.toolbar)
-    Toolbar mToolbar;
+    Toolbar toolbar;
     @BindView(R.id.icons_view_pager)
-    ViewPager mViewPager;
+    ViewPager viewPager;
     @BindView(R.id.tab_layout)
-    TabLayout mTabLayout;
+    TabLayout tabLayout;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,22 +47,22 @@ public class IconsActivity extends BaseActivity
 
     @Override
     protected void init() {
-        setSupportActionBar(mToolbar);
+        setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
-        mPagerAdapter.setCount(PAGE_COUNT);
-        mViewPager.setAdapter(mPagerAdapter);
-        mTabLayout.addTab(mTabLayout.newTab().setText(getString(R.string.action_search)));
-        mTabLayout.addTab(mTabLayout.newTab().setText(getString(R.string.item_uploads)));
-        //mTabLayout.addTab(mTabLayout.newTab().setText(getString(R.string.item_favorite)));
-        mViewPager.setOffscreenPageLimit(mTabLayout.getTabCount());
-        mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mTabLayout));
-        mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        pagerAdapter.setCount(PAGE_COUNT);
+        viewPager.setAdapter(pagerAdapter);
+        tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.item_uploads)));
+        tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.action_search)));
+        //tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.item_favorite)));
+        viewPager.setOffscreenPageLimit(tabLayout.getTabCount());
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                mViewPager.setCurrentItem(tab.getPosition());
+                viewPager.setCurrentItem(tab.getPosition());
             }
 
             @Override

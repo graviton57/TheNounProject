@@ -4,7 +4,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Created by Igor Havrylyuk on 31.05.2017.
+ * Created by Igor Havrylyuk on 15.06.2017.
  */
 
 public class LoginResponse {
