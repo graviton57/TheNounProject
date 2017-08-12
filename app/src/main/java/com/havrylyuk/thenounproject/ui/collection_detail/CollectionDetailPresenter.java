@@ -1,7 +1,6 @@
 package com.havrylyuk.thenounproject.ui.collection_detail;
 
 import com.havrylyuk.thenounproject.data.DataManager;
-import com.havrylyuk.thenounproject.data.local.db.model.OrmIcon;
 import com.havrylyuk.thenounproject.data.remote.helper.BaseViewSubscriber;
 import com.havrylyuk.thenounproject.data.remote.helper.CompositeDisposableHelper;
 import com.havrylyuk.thenounproject.data.remote.helper.error.ErrorHandlerHelper;

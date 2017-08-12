@@ -14,7 +14,8 @@ public class CollectionsPresenter<V extends CollectionsMvpView> extends BasePres
         implements CollectionsMvpPresenter<V> {
 
     @Inject
-    public CollectionsPresenter(CompositeDisposableHelper compositeDisposableHelper, DataManager dataManager) {
+    public CollectionsPresenter(CompositeDisposableHelper compositeDisposableHelper,
+                                DataManager dataManager) {
         super(compositeDisposableHelper, dataManager);
     }
 

@@ -12,8 +12,6 @@ import com.havrylyuk.thenounproject.data.remote.ApiHelper;
 import com.havrylyuk.thenounproject.injection.qualifier.ApplicationContext;
 import com.havrylyuk.thenounproject.injection.scope.TheNounProjectAppScope;
 
-import javax.inject.Singleton;
-
 import dagger.Module;
 import dagger.Provides;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;

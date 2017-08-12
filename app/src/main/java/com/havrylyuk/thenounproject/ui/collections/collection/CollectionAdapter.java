@@ -22,7 +22,8 @@ import javax.inject.Inject;
  * Created by Igor Havrylyuk on 20.05.2017.
  */
 
-public class CollectionAdapter extends BaseRecyclerViewAdapter<CollectionAdapter.ViewHolder, NounCollection> {
+public class CollectionAdapter
+        extends BaseRecyclerViewAdapter<CollectionAdapter.ViewHolder, NounCollection> {
 
     private Context context;
 
@@ -35,7 +36,8 @@ public class CollectionAdapter extends BaseRecyclerViewAdapter<CollectionAdapter
     @Override
     public CollectionAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new CollectionAdapter.ViewHolder(
-                LayoutInflater.from(parent.getContext()).inflate(R.layout.item_collection, parent, false));
+                LayoutInflater.from(
+                        parent.getContext()).inflate(R.layout.item_collection, parent, false));
     }
 
     @Override

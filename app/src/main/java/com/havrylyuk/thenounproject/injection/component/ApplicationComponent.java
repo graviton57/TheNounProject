@@ -8,7 +8,6 @@ import com.havrylyuk.thenounproject.injection.module.ApplicationModule;
 import com.havrylyuk.thenounproject.injection.qualifier.ApplicationContext;
 import com.havrylyuk.thenounproject.injection.scope.TheNounProjectAppScope;
 
-import javax.inject.Inject;
 
 import dagger.Component;
 

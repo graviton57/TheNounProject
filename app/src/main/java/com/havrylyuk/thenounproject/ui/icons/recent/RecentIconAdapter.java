@@ -44,7 +44,7 @@ public class RecentIconAdapter extends BaseRecyclerViewAdapter<RecentIconAdapter
     public void onBindViewHolder(ViewHolder holder, int position) {
         NounIcon nounIcon = getItem(position);
         //set values
-        holder.txtCounter.setText(String.valueOf(position + 1));//todo remove after debug
+        holder.txtCounter.setText(String.valueOf(position + 1));
         holder.txtAttrib.setText(nounIcon.getAttribution());
         holder.txtName.setText(nounIcon.getDateUploaded());
         holder.imageNoun.setImageURI(Uri.parse(nounIcon.getPreviewUrl()));

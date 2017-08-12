@@ -13,7 +13,6 @@ import android.view.inputmethod.EditorInfo;
 
 import com.havrylyuk.thenounproject.R;
 
-import timber.log.Timber;
 
 /**
  * Created by Igor Havrylyuk on 31.05.2017.
@@ -62,7 +61,6 @@ public abstract class BaseSearchFragment extends BaseFragment
         if (searchView != null) {
             searchView.clearFocus();
         }
-        Timber.i("Start shearch string:%s",searchQuery);
         startSearch(searchQuery, false);
         return true;
     }

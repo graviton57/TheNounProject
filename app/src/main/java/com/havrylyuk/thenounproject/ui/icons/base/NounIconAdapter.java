@@ -2,7 +2,6 @@ package com.havrylyuk.thenounproject.ui.icons.base;
 
 import android.content.Context;
 import android.net.Uri;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +12,6 @@ import android.widget.TextView;
 import com.havrylyuk.thenounproject.R;
 import com.havrylyuk.thenounproject.data.remote.model.NounIcon;
 import com.havrylyuk.thenounproject.ui.base.BaseRecyclerViewAdapter;
-import com.havrylyuk.thenounproject.utils.ImageUtils;
 
 import java.util.ArrayList;
 
@@ -46,7 +44,7 @@ public class NounIconAdapter extends BaseRecyclerViewAdapter<NounIconAdapter.Vie
     public void onBindViewHolder(ViewHolder holder, int position) {
         NounIcon nounIcon = getItem(position);
         //set values
-        holder.txtCounter.setText(String.valueOf(position + 1));//todo remove after debug
+        holder.txtCounter.setText(String.valueOf(position + 1));
         holder.txtAttrib.setText(nounIcon.getAttribution());
         holder.txtName.setText(nounIcon.getDateUploaded());
         holder.imageNoun.setImageURI(Uri.parse(nounIcon.getPreviewUrl()));

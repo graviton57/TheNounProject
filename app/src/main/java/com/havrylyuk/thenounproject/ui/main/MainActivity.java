@@ -21,7 +21,6 @@ import com.havrylyuk.thenounproject.ui.base.BaseActivity;
 import com.havrylyuk.thenounproject.ui.collections.CollectionsActivity;
 import com.havrylyuk.thenounproject.ui.home.HomeFragment;
 import com.havrylyuk.thenounproject.ui.icons.IconsActivity;
-import com.havrylyuk.thenounproject.ui.login.LoginActivity;
 
 import javax.inject.Inject;
 

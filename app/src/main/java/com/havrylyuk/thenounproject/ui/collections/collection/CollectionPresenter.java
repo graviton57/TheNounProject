@@ -6,7 +6,6 @@ import com.havrylyuk.thenounproject.data.remote.helper.BaseViewSubscriber;
 import com.havrylyuk.thenounproject.data.remote.helper.CompositeDisposableHelper;
 import com.havrylyuk.thenounproject.data.remote.helper.error.ErrorHandlerHelper;
 import com.havrylyuk.thenounproject.data.remote.model.NounCollection;
-import com.havrylyuk.thenounproject.data.remote.model.NounIcon;
 import com.havrylyuk.thenounproject.data.remote.model.response.CollectionsResponse;
 import com.havrylyuk.thenounproject.ui.base.BasePresenter;
 
@@ -53,7 +52,8 @@ public class CollectionPresenter<V extends CollectionMvpView> extends BasePresen
                     })
                     .compose(getCompositeDisposableHelper().<CollectionsResponse>applySchedulers())
                     .subscribeWith(
-                            new CollectionsObserver(getMvpView(), getDataManager().getErrorHandlerHelper())));
+                            new CollectionsObserver(getMvpView(),
+                                    getDataManager().getErrorHandlerHelper())));
         } else {
             loadCollectionFromDb("");
         }
