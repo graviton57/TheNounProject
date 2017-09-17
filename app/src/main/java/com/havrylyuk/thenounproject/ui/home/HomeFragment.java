@@ -52,7 +52,8 @@ public class HomeFragment extends BaseFragment
     SwipeRefreshLayout swipeRefreshLayout;
     @BindView(R.id.recycler_card_recent)
     RecyclerView recyclerRecent;
-    @BindView(R.id.recycler_card_history)RecyclerView recyclerHistory;
+    @BindView(R.id.recycler_card_history)
+    RecyclerView recyclerHistory;
     @BindView(R.id.txt_recent_card_error)
     TextView txtRecentError;
     @BindView(R.id.txt_history_card_error)

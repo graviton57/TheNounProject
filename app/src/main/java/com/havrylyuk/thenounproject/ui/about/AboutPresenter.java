@@ -29,14 +29,17 @@ public class AboutPresenter <V extends AboutMvpView> extends BasePresenter<V>
 
     @Override
     public void getUsageLimit() {
-        getCompositeDisposableHelper().addDisposable(getDataManager()
-                .getOauthUsage()
-                .compose(getCompositeDisposableHelper().<UsageResponse>applySchedulers())
-                .subscribe(new Consumer<UsageResponse>() {
-                    @Override
-                    public void accept(UsageResponse usageResponse) throws Exception {
+        if (getMvpView().isNetworkConnected()){
+            getCompositeDisposableHelper().addDisposable(getDataManager()
+                    .getOauthUsage()
+                    .compose(getCompositeDisposableHelper().<UsageResponse>applySchedulers())
+                    .subscribe(new Consumer<UsageResponse>() {
+                        @Override
+                        public void accept(UsageResponse usageResponse) throws Exception {
                             getMvpView().showUsageLimit(usageResponse);
-                    }
-                }));
+                        }
+                    }));
+        }
+
     }
 }
