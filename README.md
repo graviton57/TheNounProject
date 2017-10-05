@@ -1,10 +1,6 @@
 # The Noun Project for Android 
 
-<p align="center">
-  <img src= "art/logo.png" >
-</p>
 
-[![](http://developer.android.com/images/brand/en_generic_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.havrylyuk.thenounproject)
 [![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![API](https://img.shields.io/badge/API-16%2B-green.svg?style=flat)](https://android-arsenal.com/api?level=16)
 
